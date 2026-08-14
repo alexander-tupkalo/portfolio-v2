@@ -1,0 +1,46 @@
+.footer {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: var(--space-5) var(--padding-horizontal);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary); 
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer-link {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-accent); 
+}
+
+/* Разделитель точка */
+.footer-dot {
+  color: var(--color-text-secondary);
+  font-size: var(--text-xs);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: var(--space-3);
+    padding: var(--space-4);
+  }
+}
